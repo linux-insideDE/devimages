@@ -5,4 +5,4 @@ RUN apt-get update && \
     apt-get --yes dist-upgrade && \
     apt-get --yes install nodejs npm && \
     npm install -g lighthouse && \
-    apt-get install chromium
+    apt-get --yes install chromium
