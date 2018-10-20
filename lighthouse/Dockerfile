@@ -5,4 +5,5 @@ RUN apt-get update && \
     apt-get --yes dist-upgrade && \
     apt-get --yes install nodejs npm && \
     npm install -g lighthouse && \
-    apt-get --yes install chromium-browser
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
+    dpgk -i google-chrome-stable_current_amd64.deb
